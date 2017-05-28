@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1E34B49-F316-4B87-873B-A0CFEE19E066}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyPaint</RootNamespace>
+    <AssemblyName>MyPaint</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.1" />
+    <Reference Include="DevExpress.Data.v16.1" />
+    <Reference Include="DevExpress.Printing.v16.1.Core" />
+    <Reference Include="DevExpress.Utils.v16.1" />
+    <Reference Include="DevExpress.XtraBars.v16.1" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Drawing\ContentPanel.cs" />
+    <Compile Include="Drawing\DrawingPanel.cs" />
+    <Compile Include="Drawing\MainPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FillEvent\HatchBrush.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FillEvent\HatchBrush.Designer.cs">
+      <DependentUpon>HatchBrush.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FillEvent\LinearGradientBrush.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FillEvent\LinearGradientBrush.Designer.cs">
+      <DependentUpon>LinearGradientBrush.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shape\DiamondShape.cs" />
+    <Compile Include="Shape\DownArowShape.cs" />
+    <Compile Include="Shape\DrawingFrame.cs" />
+    <Compile Include="Shape\DrawingSetting.cs" />
+    <Compile Include="Shape\Ellipse.cs" />
+    <Compile Include="Shape\Eraser.cs" />
+    <Compile Include="Shape\FreePen.cs" />
+    <Compile Include="Shape\ImageShape.cs" />
+    <Compile Include="Shape\LeftArrowShape.cs" />
+    <Compile Include="Shape\LineShape.cs" />
+    <Compile Include="Shape\PentagonShape.cs" />
+    <Compile Include="Shape\Rectangle.cs" />
+    <Compile Include="Shape\RightArrowShape.cs" />
+    <Compile Include="Shape\SelectShape.cs" />
+    <Compile Include="Shape\Shape.cs" />
+    <Compile Include="Shape\SquareTriangleShape.cs" />
+    <Compile Include="Shape\TriangleShape.cs" />
+    <Compile Include="Shape\UpArrowShape.cs" />
+    <Compile Include="Tools\DrawingProperties.cs" />
+    <Compile Include="Tools\MainPaneMouseEventArgs.cs" />
+    <Compile Include="Tools\PaintTools.cs" />
+    <EmbeddedResource Include="FillEvent\HatchBrush.resx">
+      <DependentUpon>HatchBrush.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FillEvent\LinearGradientBrush.resx">
+      <DependentUpon>LinearGradientBrush.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brushes-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveall_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valuecolorizermap_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hatchBrushIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearGradientBrushIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solidBrushIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textureBrushIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editing-Line-Width-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\size1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\size2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\size3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\size4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\draw-eraser-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamondIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ellipse-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pentagon-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangle-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Triangle-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eraserIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightArrowIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upArrowIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squareTriangleIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaintIcon3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redoIcon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noFill2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noFill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solidBrushIcon1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearBrushIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hatchBrushIcon1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hatchIcon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
