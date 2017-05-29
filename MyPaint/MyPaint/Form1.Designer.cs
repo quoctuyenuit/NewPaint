@@ -605,7 +605,7 @@
             this.menuItemFill,
             this.menuItemDelete});
             this.contextMenuStrip.Name = "contextMenuStrip1";
-            this.contextMenuStrip.Size = new System.Drawing.Size(199, 198);
+            this.contextMenuStrip.Size = new System.Drawing.Size(199, 226);
             this.contextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenu_Opening);
             // 
             // menuItemOpenFile
@@ -678,6 +678,7 @@
             // 
             // menuSubItemUnFill
             // 
+            this.menuSubItemUnFill.Image = global::MyPaint.Properties.Resources.noFill;
             this.menuSubItemUnFill.Name = "menuSubItemUnFill";
             this.menuSubItemUnFill.Size = new System.Drawing.Size(217, 26);
             this.menuSubItemUnFill.Text = "UnFill";
