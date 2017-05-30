@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace MyPaint.Drawing
 {
-    class MainPanel:System.Windows.Forms.Panel
+    class MainPanel : System.Windows.Forms.Panel
     {
         private Stack<Bitmap> listBack;
 
@@ -43,8 +43,8 @@ namespace MyPaint.Drawing
             this.MouseMove += MainPanel_MouseMove;
             this.Paint += MainPanel_Paint;
             this.Resize += MainPanel_Resize;
-            this.drawingPanel = new DrawingPanel(this, _size);
-            this.contentPanel = new ContentPanel(_size.Width, _size.Height);
+            this.drawingPanel = new DrawingPanel(this, new Size(1000, 500));
+            this.contentPanel = new ContentPanel(drawingPanel.PaneSize.Width, drawingPanel.PaneSize.Height);
             this.listBack = new Stack<Bitmap>();
             this.DoubleBuffered = true;
             this.Cursor = Cursors.Cross;
@@ -52,7 +52,7 @@ namespace MyPaint.Drawing
 
         void MainPanel_DoubleClick(object sender, EventArgs e)
         {
-            if(this.drawingPanel.ActiveShape is Shape.PolygonShape)
+            if (this.drawingPanel.ActiveShape is Shape.PolygonShape)
             {
                 Shape.PolygonShape pl = (Shape.PolygonShape)this.drawingPanel.ActiveShape;
                 pl.Finish = true;
@@ -63,8 +63,8 @@ namespace MyPaint.Drawing
 
         void MainPanel_Resize(object sender, EventArgs e)
         {
-            this.drawingPanel.PaneSize = this.Size;
-            this.contentPanel.resizePanel(this.Size.Width, this.Size.Height);
+            //this.drawingPanel.PaneSize = this.Size;
+            //this.contentPanel.resizePanel(this.Size.Width, this.Size.Height);
         }
 
         void MainPanel_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -99,7 +99,7 @@ namespace MyPaint.Drawing
         public void embedDrawing2Content()
         {
             Bitmap bmp = this.Image.Clone(new Rectangle(0, 0, this.Image.Width, this.Image.Height), this.Image.PixelFormat);
-            
+
             this.listBack.Push(bmp);
 
             contentPanel.embedImage(drawingPanel.Content);
@@ -125,7 +125,7 @@ namespace MyPaint.Drawing
             get { return contentPanel.Content; }
             set
             {
-                using(Graphics gr = Graphics.FromImage(contentPanel.Content))
+                using (Graphics gr = Graphics.FromImage(contentPanel.Content))
                 {
                     gr.DrawImage(value, 0, 0);
                 }

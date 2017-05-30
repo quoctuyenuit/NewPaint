@@ -29,38 +29,38 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Utils.SuperToolTip superToolTip9 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem8 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem9 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem10 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup2 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem15 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem16 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem17 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem18 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem19 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem20 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem21 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem22 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem23 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem24 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem25 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem26 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem27 = new DevExpress.XtraBars.Ribbon.GalleryItem();
-            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem28 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem1 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem2 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem3 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem4 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem5 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem6 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem7 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem8 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem9 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem10 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem11 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem12 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem13 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem14 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip13 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem11 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip14 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem12 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip15 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem13 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip16 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem14 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem4 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem5 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem6 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem7 = new DevExpress.Utils.ToolTipItem();
             this.repositoryItemColorPickEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemColorPickEdit();
             this.menu = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnOpen = new DevExpress.XtraBars.BarButtonItem();
@@ -184,9 +184,9 @@
             this.btnOpen.Id = 1;
             this.btnOpen.LargeGlyph = global::MyPaint.Properties.Resources.open2_32x32;
             this.btnOpen.Name = "btnOpen";
-            toolTipItem8.Text = "Ctrl + O";
-            superToolTip9.Items.Add(toolTipItem8);
-            this.btnOpen.SuperTip = superToolTip9;
+            toolTipItem1.Text = "Ctrl + O";
+            superToolTip1.Items.Add(toolTipItem1);
+            this.btnOpen.SuperTip = superToolTip1;
             this.btnOpen.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnOpen_ItemClick);
             // 
             // btnSave
@@ -195,9 +195,9 @@
             this.btnSave.Id = 2;
             this.btnSave.LargeGlyph = global::MyPaint.Properties.Resources.saveall_32x32;
             this.btnSave.Name = "btnSave";
-            toolTipItem9.Text = "Ctrl + S";
-            superToolTip10.Items.Add(toolTipItem9);
-            this.btnSave.SuperTip = superToolTip10;
+            toolTipItem2.Text = "Ctrl + S";
+            superToolTip2.Items.Add(toolTipItem2);
+            this.btnSave.SuperTip = superToolTip2;
             this.btnSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSave_ItemClick);
             // 
             // barSubItem1
@@ -251,9 +251,9 @@
             this.btnUndo.Id = 16;
             this.btnUndo.LargeGlyph = global::MyPaint.Properties.Resources.reset_32x32;
             this.btnUndo.Name = "btnUndo";
-            toolTipItem10.Text = "Ctrl + Z";
-            superToolTip11.Items.Add(toolTipItem10);
-            this.btnUndo.SuperTip = superToolTip11;
+            toolTipItem3.Text = "Ctrl + Z";
+            superToolTip3.Items.Add(toolTipItem3);
+            this.btnUndo.SuperTip = superToolTip3;
             this.btnUndo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUndo_ItemClick);
             // 
             // ribbonGalleryBarItem1
@@ -263,53 +263,53 @@
             // 
             // 
             // 
-            galleryItemGroup2.Caption = "groupShape";
-            galleryItem15.Caption = "pencil";
-            galleryItem15.Checked = true;
-            galleryItem15.Image = global::MyPaint.Properties.Resources.pencil_icon;
-            galleryItem16.Caption = "line";
-            galleryItem16.Image = global::MyPaint.Properties.Resources.Line_icon;
-            galleryItem17.Caption = "bezier";
-            galleryItem17.Image = global::MyPaint.Properties.Resources.bezierShapeIcon;
-            galleryItem18.Caption = "polygon";
-            galleryItem18.Image = global::MyPaint.Properties.Resources.polygonShapeIcon;
-            galleryItem19.Caption = "rectangle";
-            galleryItem19.Image = global::MyPaint.Properties.Resources.rectangle_icon;
-            galleryItem20.Caption = "ellipse";
-            galleryItem20.Image = global::MyPaint.Properties.Resources.ellipse_icon;
-            galleryItem21.Caption = "triangle";
-            galleryItem21.Image = global::MyPaint.Properties.Resources.Triangle_icon;
-            galleryItem22.Caption = "diamond";
-            galleryItem22.Image = global::MyPaint.Properties.Resources.diamondIcon;
-            galleryItem23.Caption = "pentagon";
-            galleryItem23.Image = global::MyPaint.Properties.Resources.pentagon_icon;
-            galleryItem24.Caption = "squareTriangle";
-            galleryItem24.Image = global::MyPaint.Properties.Resources.squareTriangleIcon;
-            galleryItem25.Caption = "downArrow";
-            galleryItem25.Image = global::MyPaint.Properties.Resources.down_icon;
-            galleryItem26.Caption = "upArrow";
-            galleryItem26.Image = global::MyPaint.Properties.Resources.upArrowIcon;
-            galleryItem27.Caption = "rightArrow";
-            galleryItem27.Image = global::MyPaint.Properties.Resources.rightArrowIcon;
-            galleryItem28.Caption = "leftArrow";
-            galleryItem28.Image = global::MyPaint.Properties.Resources.leftArrow;
-            galleryItemGroup2.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
-            galleryItem15,
-            galleryItem16,
-            galleryItem17,
-            galleryItem18,
-            galleryItem19,
-            galleryItem20,
-            galleryItem21,
-            galleryItem22,
-            galleryItem23,
-            galleryItem24,
-            galleryItem25,
-            galleryItem26,
-            galleryItem27,
-            galleryItem28});
+            galleryItemGroup1.Caption = "groupShape";
+            galleryItem1.Caption = "pencil";
+            galleryItem1.Checked = true;
+            galleryItem1.Image = global::MyPaint.Properties.Resources.pencil_icon;
+            galleryItem2.Caption = "line";
+            galleryItem2.Image = global::MyPaint.Properties.Resources.Line_icon;
+            galleryItem3.Caption = "bezier";
+            galleryItem3.Image = global::MyPaint.Properties.Resources.bezierShapeIcon;
+            galleryItem4.Caption = "polygon";
+            galleryItem4.Image = global::MyPaint.Properties.Resources.polygonShapeIcon;
+            galleryItem5.Caption = "rectangle";
+            galleryItem5.Image = global::MyPaint.Properties.Resources.rectangle_icon;
+            galleryItem6.Caption = "ellipse";
+            galleryItem6.Image = global::MyPaint.Properties.Resources.ellipse_icon;
+            galleryItem7.Caption = "triangle";
+            galleryItem7.Image = global::MyPaint.Properties.Resources.Triangle_icon;
+            galleryItem8.Caption = "diamond";
+            galleryItem8.Image = global::MyPaint.Properties.Resources.diamondIcon;
+            galleryItem9.Caption = "pentagon";
+            galleryItem9.Image = global::MyPaint.Properties.Resources.pentagon_icon;
+            galleryItem10.Caption = "squareTriangle";
+            galleryItem10.Image = global::MyPaint.Properties.Resources.squareTriangleIcon;
+            galleryItem11.Caption = "downArrow";
+            galleryItem11.Image = global::MyPaint.Properties.Resources.down_icon;
+            galleryItem12.Caption = "upArrow";
+            galleryItem12.Image = global::MyPaint.Properties.Resources.upArrowIcon;
+            galleryItem13.Caption = "rightArrow";
+            galleryItem13.Image = global::MyPaint.Properties.Resources.rightArrowIcon;
+            galleryItem14.Caption = "leftArrow";
+            galleryItem14.Image = global::MyPaint.Properties.Resources.leftArrow;
+            galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
+            galleryItem1,
+            galleryItem2,
+            galleryItem3,
+            galleryItem4,
+            galleryItem5,
+            galleryItem6,
+            galleryItem7,
+            galleryItem8,
+            galleryItem9,
+            galleryItem10,
+            galleryItem11,
+            galleryItem12,
+            galleryItem13,
+            galleryItem14});
             this.ribbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup2});
+            galleryItemGroup1});
             this.ribbonGalleryBarItem1.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio;
             this.ribbonGalleryBarItem1.Id = 22;
             this.ribbonGalleryBarItem1.Name = "ribbonGalleryBarItem1";
@@ -369,9 +369,9 @@
             this.btnNew.Id = 28;
             this.btnNew.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnNew.LargeGlyph")));
             this.btnNew.Name = "btnNew";
-            toolTipTitleItem2.Text = "Ctrl + N";
-            superToolTip12.Items.Add(toolTipTitleItem2);
-            this.btnNew.SuperTip = superToolTip12;
+            toolTipTitleItem1.Text = "Ctrl + N";
+            superToolTip4.Items.Add(toolTipTitleItem1);
+            this.btnNew.SuperTip = superToolTip4;
             this.btnNew.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNew_ItemClick);
             // 
             // selectColor
@@ -399,9 +399,9 @@
             this.btnPaste.Id = 33;
             this.btnPaste.LargeGlyph = global::MyPaint.Properties.Resources.paste_32x32;
             this.btnPaste.Name = "btnPaste";
-            toolTipItem11.Text = "Ctrl + V";
-            superToolTip13.Items.Add(toolTipItem11);
-            this.btnPaste.SuperTip = superToolTip13;
+            toolTipItem4.Text = "Ctrl + V";
+            superToolTip5.Items.Add(toolTipItem4);
+            this.btnPaste.SuperTip = superToolTip5;
             this.btnPaste.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPaste_ItemClick);
             // 
             // btnCopy
@@ -411,9 +411,9 @@
             this.btnCopy.Glyph = global::MyPaint.Properties.Resources.copy_16x16;
             this.btnCopy.Id = 34;
             this.btnCopy.Name = "btnCopy";
-            toolTipItem12.Text = "Ctrl + C";
-            superToolTip14.Items.Add(toolTipItem12);
-            this.btnCopy.SuperTip = superToolTip14;
+            toolTipItem5.Text = "Ctrl + C";
+            superToolTip6.Items.Add(toolTipItem5);
+            this.btnCopy.SuperTip = superToolTip6;
             this.btnCopy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCopy_ItemClick);
             // 
             // btnCut
@@ -423,9 +423,9 @@
             this.btnCut.Glyph = global::MyPaint.Properties.Resources.cut_16x16;
             this.btnCut.Id = 35;
             this.btnCut.Name = "btnCut";
-            toolTipItem13.Text = "Ctrl + X";
-            superToolTip15.Items.Add(toolTipItem13);
-            this.btnCut.SuperTip = superToolTip15;
+            toolTipItem6.Text = "Ctrl + X";
+            superToolTip7.Items.Add(toolTipItem6);
+            this.btnCut.SuperTip = superToolTip7;
             this.btnCut.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCut_ItemClick);
             // 
             // btnRedo
@@ -434,9 +434,9 @@
             this.btnRedo.Id = 37;
             this.btnRedo.LargeGlyph = global::MyPaint.Properties.Resources.redoIcon;
             this.btnRedo.Name = "btnRedo";
-            toolTipItem14.Text = "Ctrl + Y";
-            superToolTip16.Items.Add(toolTipItem14);
-            this.btnRedo.SuperTip = superToolTip16;
+            toolTipItem7.Text = "Ctrl + Y";
+            superToolTip8.Items.Add(toolTipItem7);
+            this.btnRedo.SuperTip = superToolTip8;
             this.btnRedo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRedo_ItemClick);
             // 
             // btnFill
@@ -613,7 +613,7 @@
             this.menuItemFill,
             this.menuItemDelete});
             this.contextMenuStrip.Name = "contextMenuStrip1";
-            this.contextMenuStrip.Size = new System.Drawing.Size(199, 226);
+            this.contextMenuStrip.Size = new System.Drawing.Size(199, 198);
             this.contextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenu_Opening);
             // 
             // menuItemOpenFile
@@ -735,6 +735,7 @@
             // 
             // FreeSpace
             // 
+            this.FreeSpace.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.FreeSpace.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FreeSpace.Location = new System.Drawing.Point(0, 132);
             this.FreeSpace.Name = "FreeSpace";

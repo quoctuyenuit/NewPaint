@@ -29,7 +29,7 @@ namespace MyPaint
         void init()
         {
             this.DrawingSpace = new Drawing.MainPanel(this.Size);
-            this.DrawingSpace.BackColor = System.Drawing.Color.White;
+            this.DrawingSpace.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.DrawingSpace.Cursor = System.Windows.Forms.Cursors.Cross;
             this.DrawingSpace.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DrawingSpace.Location = new System.Drawing.Point(0, 150);
@@ -355,7 +355,6 @@ namespace MyPaint
 
         private void btnSelect_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            this.DrawingSpace.embed();
             btnFill.Enabled = false;
             btnCopy.Enabled = true;
             btnCut.Enabled = true;
@@ -411,7 +410,6 @@ namespace MyPaint
         {
             this.btnCopy.Enabled = false;
             this.btnCut.Enabled = false;
-            this.DrawingSpace.embed();
             btnSelect.Checked = false;
             switch(e.Item.Caption)
             {

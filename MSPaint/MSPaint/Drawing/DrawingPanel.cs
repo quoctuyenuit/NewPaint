@@ -46,7 +46,7 @@ namespace MyPaint.Drawing
             this.mainPanel = mainPanel;
             this.paneSize = size;
             this.content = new Bitmap(this.paneSize.Width, this.paneSize.Height);
-            this.content.MakeTransparent();
+            //this.content.MakeTransparent();
             this.MouseDown += DrawingPanel_MouseDown;
             this.MouseMove += DrawingPanel_MouseMove;
             this.MouseUp += DrawingPanel_MouseUp;
@@ -85,6 +85,14 @@ namespace MyPaint.Drawing
 
         void DrawingPanel_MouseDown(object sender, Tools.MainPaneMouseEventArgs e)
         {
+            Tools.DrawingProperties props;
+            if(activeShape != null)
+            {
+                props = getDrawingProperties();
+                activeShape.updateShape(e.Location, props, Shape.DrawingSetting.MoseStatus.Down);
+                this.updateContent();
+            }
+
             if (activeShape == null)
             {
                 switch (Tools.PaintTools.DrawingTool)
@@ -171,7 +179,7 @@ namespace MyPaint.Drawing
                         }
                 }
             }
-            Tools.DrawingProperties props = getDrawingProperties();
+            props = getDrawingProperties();
             activeShape.updateShape(e.Location, props, Shape.DrawingSetting.MoseStatus.Down);
             this.updateContent();
             if (activeShape == null)

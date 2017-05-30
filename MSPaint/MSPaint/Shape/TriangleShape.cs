@@ -60,19 +60,10 @@ namespace MyPaint.Shape
                     }
                 }
             }
-            drawFrame(bmp);
+            if (drawingStatus != DrawingSetting.DrawingStatus.Draw)
+                drawFrame(bmp);
 
             return bmp;
         }
-
-        //public override void RotateShape()
-        //{
-        //    base.RotateShape();
-        //    Point centerPoint = new Point((rightBound - leftBound)/2 + leftBound, (lowerBound - upperBound)/2+upperBound);
-
-        //    p1 = DrawingSetting.RotatePoint(p1, centerPoint, 90);
-        //    p2 = DrawingSetting.RotatePoint(p2, centerPoint, 90);
-        //    p3 = DrawingSetting.RotatePoint(p3, centerPoint, 90);
-        //}
     }
 }

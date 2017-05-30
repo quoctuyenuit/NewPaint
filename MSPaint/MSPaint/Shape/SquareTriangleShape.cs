@@ -55,8 +55,8 @@ namespace MyPaint.Shape
 
                 }
             }
-
-            drawFrame(bmp);
+            if (drawingStatus != DrawingSetting.DrawingStatus.Draw)
+                drawFrame(bmp);
 
             return bmp;
         }
