@@ -227,9 +227,7 @@ namespace MyPaint.Shape
                     finish = isFinish(_curPoint);
                     if (finish)
                     {
-                        //Lưu lại tỷ lệ các điểm trong hình sau khi vừa vẽ xong
-                        foreach (Point p in listPoint)
-                            this.listRate.Add(new Rate() { X = xacDinhTyLe(p, true), Y = xacDinhTyLe(p, false) });
+                        getRateListPoint();
                     }
                 }
 
@@ -258,6 +256,13 @@ namespace MyPaint.Shape
                 }
                 #endregion
             }
+        }
+
+        public void getRateListPoint()
+        {
+            //Lưu lại tỷ lệ các điểm trong hình sau khi vừa vẽ xong
+            foreach (Point p in listPoint)
+                this.listRate.Add(new Rate() { X = xacDinhTyLe(p, true), Y = xacDinhTyLe(p, false) });
         }
 
         protected override System.Drawing.Bitmap generateImage()

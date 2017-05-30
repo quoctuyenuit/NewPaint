@@ -29,7 +29,6 @@ namespace MyPaint.Shape
         public abstract void updateShape(Point _curPoint, Tools.DrawingProperties _properties, DrawingSetting.MoseStatus _mouseStatus);
         public abstract void setDoneStatus();
         public abstract Cursor checkCursor(Point _curPoint);
-        public abstract void RotateShape(double angleInDegrees);
         
         protected Pen genratePen(Tools.DrawingProperties properties)
         {

@@ -44,8 +44,10 @@ namespace MyPaint.Shape
                             if (i % 2 == 0)
                                 tempList.Add(listPrePoint[i]);
 
-                        if (tempList.Count > 1)
-                            gr.DrawCurve(pen, tempList.ToArray(), 0.5f);
+                        if (tempList.Count <= 1)
+                            tempList.Add(new Point() { X = listPrePoint.First().X + 1, Y = listPrePoint.First().Y });
+
+                        gr.DrawCurve(pen, tempList.ToArray(), 0.5f);
                     }
                     else
                     {

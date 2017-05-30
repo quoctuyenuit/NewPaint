@@ -409,6 +409,8 @@ namespace MyPaint
 
         private void ribbonGalleryBarItem1_GalleryItemClick(object sender, DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs e)
         {
+            this.btnCopy.Enabled = false;
+            this.btnCut.Enabled = false;
             this.DrawingSpace.embed();
             btnSelect.Checked = false;
             switch(e.Item.Caption)
@@ -589,6 +591,8 @@ namespace MyPaint
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            this.DrawingSpace.embed();
+
             if (this.DrawingSpace.ListBack.Count == 0)
                 return;
 
@@ -652,12 +656,6 @@ namespace MyPaint
         private void hatchBrush_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             menuSubItemHatchBrush_Click(null, null);
-        }
-
-        private void menuItemRotate_Click(object sender, EventArgs e)
-        {
-            this.DrawingSpace.DrawingPanel.ActiveShape.RotateShape(90);
-            this.DrawingSpace.refreshPanel();
         }
     }
 }

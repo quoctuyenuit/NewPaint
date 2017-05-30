@@ -56,6 +56,7 @@ namespace MyPaint.Drawing
             {
                 Shape.PolygonShape pl = (Shape.PolygonShape)this.drawingPanel.ActiveShape;
                 pl.Finish = true;
+                pl.getRateListPoint();
             }
         }
 
