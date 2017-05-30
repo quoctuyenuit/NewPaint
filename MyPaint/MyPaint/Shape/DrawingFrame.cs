@@ -315,5 +315,24 @@ namespace MyPaint.Shape
             gr.FillRectangle(Brushes.White, left, upper, 2 * HANDLE_POINT_RADIUS, 2 * HANDLE_POINT_RADIUS);
             gr.DrawRectangle(Pens.Black, left, upper, 2 * HANDLE_POINT_RADIUS, 2 * HANDLE_POINT_RADIUS);
         }
+
+        public override void RotateShape(double angleInDegrees)
+        {
+            Point p1 = new Point(leftBound, upperBound);
+            Point p2 = new Point(rightBound, upperBound);
+            Point p3 = new Point(rightBound, lowerBound);
+            Point p4 = new Point(leftBound, lowerBound);
+            Point centerPoint = new Point((rightBound - leftBound) / 2 + leftBound, (lowerBound - upperBound) / 2 + upperBound);
+            
+            p1 = DrawingSetting.RotatePoint(p1, centerPoint, angleInDegrees);
+            p2 = DrawingSetting.RotatePoint(p2, centerPoint, angleInDegrees);
+            p3 = DrawingSetting.RotatePoint(p3, centerPoint, angleInDegrees);
+            p4 = DrawingSetting.RotatePoint(p4, centerPoint, angleInDegrees);
+
+            leftBound = p4.X;
+            rightBound = p1.X;
+            upperBound = p1.Y;
+            lowerBound = p2.Y;
+        }
     }
 }

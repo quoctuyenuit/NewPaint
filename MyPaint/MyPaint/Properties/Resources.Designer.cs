@@ -63,6 +63,16 @@ namespace MyPaint.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bezierShapeIcon {
+            get {
+                object obj = ResourceManager.GetObject("bezierShapeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Brushes_icon {
             get {
                 object obj = ResourceManager.GetObject("Brushes-icon", resourceCulture);
@@ -326,6 +336,16 @@ namespace MyPaint.Properties {
         internal static System.Drawing.Bitmap pentagon_icon {
             get {
                 object obj = ResourceManager.GetObject("pentagon-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap polygonShapeIcon {
+            get {
+                object obj = ResourceManager.GetObject("polygonShapeIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

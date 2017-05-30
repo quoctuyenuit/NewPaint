@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyPaint.Tools;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -7,40 +8,55 @@ using System.Threading.Tasks;
 
 namespace MyPaint.Shape
 {
-    class Eraser:FreePen
+    class Eraser : FreePen
     {
         public Eraser(Size surfaceSize, Point p)
             : base(surfaceSize, p)
         { }
 
-        public override void updateShape(System.Drawing.Point _curPoint, Tools.DrawingProperties _properties, DrawingSetting.MoseStatus _mouseStatus)
+        public override System.Drawing.Bitmap CurrentShape
         {
-            switch (_mouseStatus)
-            {
-                case DrawingSetting.MoseStatus.Down:
-                    {
-                        this.prePoint.X = _curPoint.X;
-                        this.prePoint.Y = _curPoint.Y;
-                        break;
-                    }
-                case DrawingSetting.MoseStatus.Move:
-                    {
-                        using (Graphics g = Graphics.FromImage(currentShape))
-                        {
-                            Pen customPen = new Pen(Color.White);
-                            customPen.Width = Tools.PaintTools.EraserWidth;
-                            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-                            g.DrawLine(customPen, prePoint, _curPoint);
-                            prePoint = _curPoint;
-                            break;
-                        }
-                    }
-                case DrawingSetting.MoseStatus.Up:
-                    {
-                        this.doneStatus = true;
-                        break;
-                    }
-            }
+            get { return generateImage(); }
         }
+
+
+        private Bitmap generateImage()
+        {
+            Bitmap bmp = new Bitmap(surfaceSize.Width, surfaceSize.Height);
+
+            if (drawingStatus == DrawingSetting.DrawingStatus.PreDraw)
+                return bmp;
+            else
+            {
+                using (Graphics gr = Graphics.FromImage(bmp))
+                {
+                    Pen pen = new Pen(Color.White);
+                    pen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
+                    pen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+                    pen.Width = Tools.PaintTools.EraserWidth;
+
+                    gr.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+                    if (doneStatus)
+                    {
+                        List<Point> tempList = new List<Point>();
+                        for (int i = 0; i < listPrePoint.Count; i++)
+                            if (i % 2 == 0)
+                                tempList.Add(listPrePoint[i]);
+
+                        if (tempList.Count > 1)
+                            gr.DrawCurve(pen, tempList.ToArray(), 0.5f);
+                    }
+                    else
+                    {
+                        if (listPrePoint.Count > 1)
+                            gr.DrawLines(pen, listPrePoint.ToArray());
+                    }
+                }
+            }
+
+            return bmp;
+        }
+
     }
 }

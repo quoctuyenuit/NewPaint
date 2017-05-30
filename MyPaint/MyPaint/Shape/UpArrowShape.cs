@@ -10,9 +10,19 @@ namespace MyPaint.Shape
 {
     class UpArrowShape:DrawingFrame
     {
+        private List<Point> listPoint;
+
         public UpArrowShape(Size surfaceSize, Point p)
             : base(surfaceSize, p)
-        { }
+        {
+            this.listPoint = new List<Point>();
+        }
+
+        public override void updateShape(Point _curPoint, Tools.DrawingProperties _properties, DrawingSetting.MoseStatus _mouseStatus)
+        {
+            base.updateShape(_curPoint, _properties, _mouseStatus);
+
+        }
 
         public override Bitmap CurrentShape
         {

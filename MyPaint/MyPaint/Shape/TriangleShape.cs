@@ -10,12 +10,24 @@ namespace MyPaint.Shape
 {
     class TriangleShape : DrawingFrame
     {
+        private Point p1;
+        private Point p2;
+        private Point p3;
+
         public TriangleShape(Size surfaceSize, Point p):base(surfaceSize, p)
         { }
 
         public override Bitmap CurrentShape
         {
             get { return this.generateImage(); }
+        }
+
+        public override void updateShape(Point _curPoint, Tools.DrawingProperties _properties, DrawingSetting.MoseStatus _mouseStatus)
+        {
+            base.updateShape(_curPoint, _properties, _mouseStatus);
+            p1 = new Point(leftBound, lowerBound);
+            p2 = new Point((rightBound - leftBound) / 2 + leftBound, upperBound);
+            p3 = new Point(rightBound, lowerBound);
         }
 
         protected override Bitmap generateImage()
@@ -37,9 +49,7 @@ namespace MyPaint.Shape
                     pen.StartCap = LineCap.Round;
                     pen.EndCap = LineCap.Round;
 
-                    Point p1 = new Point(leftBound, lowerBound);
-                    Point p2 = new Point((rightBound - leftBound) / 2 + leftBound, upperBound);
-                    Point p3 = new Point(rightBound, lowerBound);
+                    
 
                     Point[] pArray = { p1, p2, p3 };
                     gr.DrawPolygon(pen, pArray);
@@ -54,5 +64,15 @@ namespace MyPaint.Shape
 
             return bmp;
         }
+
+        //public override void RotateShape()
+        //{
+        //    base.RotateShape();
+        //    Point centerPoint = new Point((rightBound - leftBound)/2 + leftBound, (lowerBound - upperBound)/2+upperBound);
+
+        //    p1 = DrawingSetting.RotatePoint(p1, centerPoint, 90);
+        //    p2 = DrawingSetting.RotatePoint(p2, centerPoint, 90);
+        //    p3 = DrawingSetting.RotatePoint(p3, centerPoint, 90);
+        //}
     }
 }

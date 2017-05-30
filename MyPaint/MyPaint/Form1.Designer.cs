@@ -48,6 +48,8 @@
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem10 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem11 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             DevExpress.XtraBars.Ribbon.GalleryItem galleryItem12 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem13 = new DevExpress.XtraBars.Ribbon.GalleryItem();
+            DevExpress.XtraBars.Ribbon.GalleryItem galleryItem14 = new DevExpress.XtraBars.Ribbon.GalleryItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
@@ -115,6 +117,7 @@
             this.menuSubItemTextureBrush = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSubItemHatchBrush = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemRotate = new System.Windows.Forms.ToolStripMenuItem();
             this.FreeSpace = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemColorPickEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menu)).BeginInit();
@@ -267,26 +270,30 @@
             galleryItem1.Image = global::MyPaint.Properties.Resources.pencil_icon;
             galleryItem2.Caption = "line";
             galleryItem2.Image = global::MyPaint.Properties.Resources.Line_icon;
-            galleryItem3.Caption = "rectangle";
-            galleryItem3.Image = global::MyPaint.Properties.Resources.rectangle_icon;
-            galleryItem4.Caption = "ellipse";
-            galleryItem4.Image = global::MyPaint.Properties.Resources.ellipse_icon;
-            galleryItem5.Caption = "triangle";
-            galleryItem5.Image = global::MyPaint.Properties.Resources.Triangle_icon;
-            galleryItem6.Caption = "diamond";
-            galleryItem6.Image = global::MyPaint.Properties.Resources.diamondIcon;
-            galleryItem7.Caption = "pentagon";
-            galleryItem7.Image = global::MyPaint.Properties.Resources.pentagon_icon;
-            galleryItem8.Caption = "squareTriangle";
-            galleryItem8.Image = global::MyPaint.Properties.Resources.squareTriangleIcon;
-            galleryItem9.Caption = "downArrow";
-            galleryItem9.Image = global::MyPaint.Properties.Resources.down_icon;
-            galleryItem10.Caption = "upArrow";
-            galleryItem10.Image = global::MyPaint.Properties.Resources.upArrowIcon;
-            galleryItem11.Caption = "rightArrow";
-            galleryItem11.Image = global::MyPaint.Properties.Resources.rightArrowIcon;
-            galleryItem12.Caption = "leftArrow";
-            galleryItem12.Image = global::MyPaint.Properties.Resources.leftArrow;
+            galleryItem3.Caption = "bezier";
+            galleryItem3.Image = global::MyPaint.Properties.Resources.bezierShapeIcon;
+            galleryItem4.Caption = "polygon";
+            galleryItem4.Image = global::MyPaint.Properties.Resources.polygonShapeIcon;
+            galleryItem5.Caption = "rectangle";
+            galleryItem5.Image = global::MyPaint.Properties.Resources.rectangle_icon;
+            galleryItem6.Caption = "ellipse";
+            galleryItem6.Image = global::MyPaint.Properties.Resources.ellipse_icon;
+            galleryItem7.Caption = "triangle";
+            galleryItem7.Image = global::MyPaint.Properties.Resources.Triangle_icon;
+            galleryItem8.Caption = "diamond";
+            galleryItem8.Image = global::MyPaint.Properties.Resources.diamondIcon;
+            galleryItem9.Caption = "pentagon";
+            galleryItem9.Image = global::MyPaint.Properties.Resources.pentagon_icon;
+            galleryItem10.Caption = "squareTriangle";
+            galleryItem10.Image = global::MyPaint.Properties.Resources.squareTriangleIcon;
+            galleryItem11.Caption = "downArrow";
+            galleryItem11.Image = global::MyPaint.Properties.Resources.down_icon;
+            galleryItem12.Caption = "upArrow";
+            galleryItem12.Image = global::MyPaint.Properties.Resources.upArrowIcon;
+            galleryItem13.Caption = "rightArrow";
+            galleryItem13.Image = global::MyPaint.Properties.Resources.rightArrowIcon;
+            galleryItem14.Caption = "leftArrow";
+            galleryItem14.Image = global::MyPaint.Properties.Resources.leftArrow;
             galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem1,
             galleryItem2,
@@ -299,7 +306,9 @@
             galleryItem9,
             galleryItem10,
             galleryItem11,
-            galleryItem12});
+            galleryItem12,
+            galleryItem13,
+            galleryItem14});
             this.ribbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
             galleryItemGroup1});
             this.ribbonGalleryBarItem1.Gallery.ItemCheckMode = DevExpress.XtraBars.Ribbon.Gallery.ItemCheckMode.SingleRadio;
@@ -603,9 +612,10 @@
             this.menuItemPaste,
             this.toolStripSeparator2,
             this.menuItemFill,
-            this.menuItemDelete});
+            this.menuItemDelete,
+            this.menuItemRotate});
             this.contextMenuStrip.Name = "contextMenuStrip1";
-            this.contextMenuStrip.Size = new System.Drawing.Size(199, 226);
+            this.contextMenuStrip.Size = new System.Drawing.Size(199, 224);
             this.contextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenu_Opening);
             // 
             // menuItemOpenFile
@@ -725,6 +735,13 @@
             this.menuItemDelete.Text = "Delete";
             this.menuItemDelete.Click += new System.EventHandler(this.menuItemDelete_Click);
             // 
+            // menuItemRotate
+            // 
+            this.menuItemRotate.Name = "menuItemRotate";
+            this.menuItemRotate.Size = new System.Drawing.Size(198, 26);
+            this.menuItemRotate.Text = "Rotate";
+            this.menuItemRotate.Click += new System.EventHandler(this.menuItemRotate_Click);
+            // 
             // FreeSpace
             // 
             this.FreeSpace.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -816,5 +833,6 @@
         private DevExpress.XtraBars.BarButtonItem linearBrush;
         private DevExpress.XtraBars.BarButtonItem textureBrush;
         private DevExpress.XtraBars.BarButtonItem hatchBrush;
+        private System.Windows.Forms.ToolStripMenuItem menuItemRotate;
     }
 }

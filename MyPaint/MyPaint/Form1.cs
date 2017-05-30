@@ -355,6 +355,7 @@ namespace MyPaint
 
         private void btnSelect_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            this.DrawingSpace.embed();
             btnFill.Enabled = false;
             btnCopy.Enabled = true;
             btnCut.Enabled = true;
@@ -494,6 +495,20 @@ namespace MyPaint
                         this.btnFill.Enabled = true;
                         Tools.PaintTools.DrawingTool = Tools.PaintTools.EnumDrawingTool.LeftArrow;
                         this.currentShape.Image = Resources.down_icon;
+                        break;
+                    }
+                case "polygon":
+                    {
+                        this.btnFill.Enabled = true;
+                        Tools.PaintTools.DrawingTool = Tools.PaintTools.EnumDrawingTool.Polygon;
+                        this.currentShape.Image = Resources.polygonShapeIcon;
+                        break;
+                    }
+                case "bezier":
+                    {
+                        this.btnFill.Enabled = true;
+                        Tools.PaintTools.DrawingTool = Tools.PaintTools.EnumDrawingTool.Bezier;
+                        this.currentShape.Image = Resources.bezierShapeIcon;
                         break;
                     }
             }
@@ -639,8 +654,10 @@ namespace MyPaint
             menuSubItemHatchBrush_Click(null, null);
         }
 
-        
-
-        
+        private void menuItemRotate_Click(object sender, EventArgs e)
+        {
+            this.DrawingSpace.DrawingPanel.ActiveShape.RotateShape(90);
+            this.DrawingSpace.refreshPanel();
+        }
     }
 }

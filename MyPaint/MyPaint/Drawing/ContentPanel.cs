@@ -31,7 +31,6 @@ namespace MyPaint.Drawing
             {
                 Bitmap newContent = new Bitmap(newWidth, newHeight);
                 Graphics g = Graphics.FromImage(newContent);
-                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
                 g.DrawImage(content, 0, 0);
                 this.content = newContent;
             }
@@ -43,7 +42,6 @@ namespace MyPaint.Drawing
         {
             using(Graphics g = Graphics.FromImage(content))
             {
-                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
                 g.DrawImage(img, new Point(0, 0));
             }
         }

@@ -224,5 +224,11 @@ namespace MyPaint.Shape
 
         }
 
+
+
+        public override void RotateShape(double angleInDegrees)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

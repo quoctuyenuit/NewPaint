@@ -9,7 +9,7 @@ namespace MyPaint.Tools
 {
     class PaintTools
     {
-        public enum EnumDrawingTool { FreePen, Rectangle, Ellipse, Line, Image, Triangle, SquareTriangle, Diamond, Pentagon, DownArrow, UpArrow, RightArrow, LeftArrow, Eraser, Select};
+        public enum EnumDrawingTool { FreePen, Rectangle, Ellipse, Line, Image, Triangle, SquareTriangle, Diamond, Pentagon, DownArrow, UpArrow, RightArrow, LeftArrow, Eraser, Select, Polygon, Bezier};
         public static EnumDrawingTool DrawingTool;
         public static Color DrawingColor;
         public static Brush DrawingBrush;

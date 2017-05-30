@@ -36,6 +36,7 @@ namespace MyPaint.Drawing
         {
             this.Size = _size;
 
+            this.DoubleClick += MainPanel_DoubleClick;
             this.MouseClick += MainPanel_MouseClick;
             this.MouseDown += MainPanel_MouseDown;
             this.MouseUp += MainPanel_MouseUp;
@@ -49,6 +50,15 @@ namespace MyPaint.Drawing
             this.Cursor = Cursors.Cross;
         }
 
+        void MainPanel_DoubleClick(object sender, EventArgs e)
+        {
+            if(this.drawingPanel.ActiveShape is Shape.PolygonShape)
+            {
+                Shape.PolygonShape pl = (Shape.PolygonShape)this.drawingPanel.ActiveShape;
+                pl.Finish = true;
+            }
+        }
+
 
         void MainPanel_Resize(object sender, EventArgs e)
         {
@@ -59,7 +69,6 @@ namespace MyPaint.Drawing
         void MainPanel_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             g.DrawImage(contentPanel.Content, new Point(0, 0));
             g.DrawImage(drawingPanel.Content, new Point(0, 0));
         }
