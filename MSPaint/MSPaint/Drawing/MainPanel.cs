@@ -43,7 +43,7 @@ namespace MyPaint.Drawing
             this.MouseMove += MainPanel_MouseMove;
             this.Paint += MainPanel_Paint;
             this.Resize += MainPanel_Resize;
-            this.drawingPanel = new DrawingPanel(this, new Size(1000, 500));
+            this.drawingPanel = new DrawingPanel(this, this.Size);//new Size(1000, 500));
             this.contentPanel = new ContentPanel(drawingPanel.PaneSize.Width, drawingPanel.PaneSize.Height);
             this.listBack = new Stack<Bitmap>();
             this.DoubleBuffered = true;

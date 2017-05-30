@@ -28,14 +28,15 @@ namespace MyPaint
 
         void init()
         {
-            this.DrawingSpace = new Drawing.MainPanel(this.Size);
+            this.DrawingSpace = new Drawing.MainPanel(new Size(1000, 500));
             this.DrawingSpace.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.DrawingSpace.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.DrawingSpace.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DrawingSpace.Location = new System.Drawing.Point(0, 150);
+            //this.DrawingSpace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DrawingSpace.Location = new System.Drawing.Point(0, 0);
             this.DrawingSpace.Name = "mainPanel1";
             this.DrawingSpace.TabIndex = 1;
             this.DrawingSpace.ContextMenuStrip = contextMenuStrip;
+
             this.FreeSpace.Controls.Add(this.DrawingSpace);
             this.listForward = new Stack<Bitmap>();
         }

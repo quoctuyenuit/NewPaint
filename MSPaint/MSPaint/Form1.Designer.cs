@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
@@ -102,7 +101,7 @@
             this.penWitdhStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.currentShape = new System.Windows.Forms.ToolStripStatusLabel();
-            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip();
             this.menuItemOpenFile = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemSaveFile = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -735,6 +734,7 @@
             // 
             // FreeSpace
             // 
+            this.FreeSpace.AutoScroll = true;
             this.FreeSpace.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.FreeSpace.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FreeSpace.Location = new System.Drawing.Point(0, 132);

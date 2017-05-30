@@ -46,7 +46,7 @@ namespace MyPaint.Drawing
             this.mainPanel = mainPanel;
             this.paneSize = size;
             this.content = new Bitmap(this.paneSize.Width, this.paneSize.Height);
-            //this.content.MakeTransparent();
+            this.content.MakeTransparent();
             this.MouseDown += DrawingPanel_MouseDown;
             this.MouseMove += DrawingPanel_MouseMove;
             this.MouseUp += DrawingPanel_MouseUp;
