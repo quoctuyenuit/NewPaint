@@ -3,9 +3,9 @@ C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\obj\Debug\MyPaint.pdb
 C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\bin\Debug\MyPaint.exe
 C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\bin\Debug\MyPaint.pdb
 C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\obj\Debug\MSPaint.csprojResolveAssemblyReference.cache
-C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\obj\Debug\MyPaint.FillEvent.HatchBrush.resources
-C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\obj\Debug\MyPaint.FillEvent.LinearGradientBrush.resources
-C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\obj\Debug\MyPaint.Form1.resources
-C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\obj\Debug\MyPaint.Properties.Resources.resources
 C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\obj\Debug\MSPaint.csproj.GenerateResource.Cache
 C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\obj\Debug\MyPaint.exe.licenses
+C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\obj\Debug\MSPaint.FillEvent.HatchBrush.resources
+C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\obj\Debug\MSPaint.FillEvent.LinearGradientBrush.resources
+C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\obj\Debug\MSPaint.Form1.resources
+C:\Users\QuocTuyen\Documents\NewPaint\MSPaint\MSPaint\obj\Debug\MSPaint.Properties.Resources.resources

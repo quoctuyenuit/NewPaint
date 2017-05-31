@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
 
-namespace MyPaint
+namespace MSPaint
 {
     static class Program
     {

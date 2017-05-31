@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyPaint.Tools
+namespace MSPaint.Tools
 {
     class DrawingProperties
     {

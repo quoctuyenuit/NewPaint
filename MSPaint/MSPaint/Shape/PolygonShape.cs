@@ -1,4 +1,4 @@
-﻿using MyPaint.Tools;
+﻿using MSPaint.Tools;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyPaint.Shape
+namespace MSPaint.Shape
 {
     class PolygonShape : DrawingFrame
     {
@@ -51,10 +51,10 @@ namespace MyPaint.Shape
                                  && (_curPoint.Y > startPoint.Y - pointRadius && _curPoint.Y < startPoint.Y + pointRadius));
         }
 
-        public override void updateShape(Point _curPoint, Tools.DrawingProperties _properties, MyPaint.Shape.DrawingSetting.MoseStatus _mouseStatus)
+        public override void updateShape(Point _curPoint, Tools.DrawingProperties _properties, MSPaint.Shape.DrawingSetting.MoseStatus _mouseStatus)
         {
             this.drawingProperties = _properties;
-            if (_mouseStatus == MyPaint.Shape.DrawingSetting.MoseStatus.Down)
+            if (_mouseStatus == MSPaint.Shape.DrawingSetting.MoseStatus.Down)
             {
                 tempPoint = _curPoint;
                 #region MouseStatus = Down

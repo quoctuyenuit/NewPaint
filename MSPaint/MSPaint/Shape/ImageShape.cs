@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MyPaint.Shape
+namespace MSPaint.Shape
 {
     class ImageShape : DrawingFrame
     {

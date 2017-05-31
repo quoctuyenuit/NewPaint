@@ -8,7 +8,7 @@
     <ProjectGuid>{A1E34B49-F316-4B87-873B-A0CFEE19E066}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyPaint</RootNamespace>
+    <RootNamespace>MSPaint</RootNamespace>
     <AssemblyName>MyPaint</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

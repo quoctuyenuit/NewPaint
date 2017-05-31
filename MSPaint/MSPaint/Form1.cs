@@ -1,4 +1,4 @@
-﻿using MyPaint.Properties;
+﻿using MSPaint.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MyPaint
+namespace MSPaint
 {
     public partial class Form1 : Form
     {
@@ -59,7 +59,9 @@ namespace MyPaint
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            DevExpress.Utils.WaitDialogForm f = new DevExpress.Utils.WaitDialogForm();
             init();
+            f.Close();
         }
 
         #region File
@@ -87,10 +89,9 @@ namespace MyPaint
             {
                 this.DrawingSpace.embed();
 
-                Bitmap bmp = this.DrawingSpace.ListBack.Last();
+                this.DrawingSpace.ContentPanel.RefreshContent(this.DrawingSpace.Size.Width, this.DrawingSpace.Size.Height);
+                this.DrawingSpace.MainPanel_Resize(null, null);
 
-                this.DrawingSpace.ContentPanel.Content = bmp;
-                this.DrawingSpace.DrawingPanel.Content = new Bitmap(bmp.Size.Width, bmp.Size.Height);
                 this.DrawingSpace.Refresh();
                 this.DrawingSpace.ListBack.Clear();
             }
@@ -109,6 +110,8 @@ namespace MyPaint
                 if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     Bitmap bmp = new Bitmap(dlg.FileName);
+
+                    this.DrawingSpace.Size = bmp.Size;
 
                     this.DrawingSpace.DrawingPanel.ActiveShape = new Shape.ImageShape(this.DrawingSpace.Size, new Point(0, 0), bmp);
 
@@ -412,6 +415,7 @@ namespace MyPaint
             this.btnCopy.Enabled = false;
             this.btnCut.Enabled = false;
             btnSelect.Checked = false;
+            this.DrawingSpace.embed();
             switch(e.Item.Caption)
             {
                 case "pencil":

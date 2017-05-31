@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyPaint.Drawing
+namespace MSPaint.Drawing
 {
     class DrawingPanel
     {
@@ -60,7 +60,7 @@ namespace MyPaint.Drawing
                 mainPanel.embedDrawing2Content();
                 activeShape = null;
             }
-            mainPanel.refreshPanel();
+            mainPanel.Refresh();
         }
 
         private Tools.DrawingProperties getDrawingProperties()
@@ -86,12 +86,12 @@ namespace MyPaint.Drawing
         void DrawingPanel_MouseDown(object sender, Tools.MainPaneMouseEventArgs e)
         {
             Tools.DrawingProperties props;
-            if(activeShape != null)
-            {
-                props = getDrawingProperties();
-                activeShape.updateShape(e.Location, props, Shape.DrawingSetting.MoseStatus.Down);
-                this.updateContent();
-            }
+            //if(activeShape != null)
+            //{
+            //    props = getDrawingProperties();
+            //    activeShape.updateShape(e.Location, props, Shape.DrawingSetting.MoseStatus.Down);
+            //    this.updateContent();
+            //}
 
             if (activeShape == null)
             {
@@ -179,9 +179,13 @@ namespace MyPaint.Drawing
                         }
                 }
             }
-            props = getDrawingProperties();
-            activeShape.updateShape(e.Location, props, Shape.DrawingSetting.MoseStatus.Down);
-            this.updateContent();
+
+            if (activeShape != null)
+            {
+                props = getDrawingProperties();
+                activeShape.updateShape(e.Location, props, Shape.DrawingSetting.MoseStatus.Down);
+                this.updateContent();
+            }
             if (activeShape == null)
                 mainPanel.Cursor = System.Windows.Forms.Cursors.Cross;
             else

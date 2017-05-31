@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MyPaint.FillEvent
+namespace MSPaint.FillEvent
 {
     public partial class HatchBrush : Form
     {

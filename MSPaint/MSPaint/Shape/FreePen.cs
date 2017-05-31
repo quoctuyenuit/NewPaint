@@ -1,4 +1,4 @@
-﻿using MyPaint.Tools;
+﻿using MSPaint.Tools;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MyPaint.Shape
+namespace MSPaint.Shape
 {
     class FreePen : Shape
     {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MyPaint.Shape
+namespace MSPaint.Shape
 {
     abstract class DrawingFrame:Shape
     {
@@ -301,19 +301,12 @@ namespace MyPaint.Shape
                         {
                             if (i == 1 && j == 1)
                                 continue;
-                            drawEditPoint(xArr[i], yArr[j], gr);
+                            MSPaint.Shape.DrawingSetting.drawEditPoint(new Point(xArr[i], yArr[j]), gr, HANDLE_POINT_RADIUS);
                         }
                 }
             }
         }
 
-        //Hàm vẽ các điểm xung quay để chỉnh sửa
-        protected void drawEditPoint(int x, int y, Graphics gr)
-        {
-            int left = x - HANDLE_POINT_RADIUS;
-            int upper = y - HANDLE_POINT_RADIUS;
-            gr.FillRectangle(Brushes.White, left, upper, 2 * HANDLE_POINT_RADIUS, 2 * HANDLE_POINT_RADIUS);
-            gr.DrawRectangle(Pens.Black, left, upper, 2 * HANDLE_POINT_RADIUS, 2 * HANDLE_POINT_RADIUS);
-        }
+        
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace MyPaint.FillEvent
+﻿namespace MSPaint.FillEvent
 {
     partial class HatchBrush
     {

@@ -1,4 +1,4 @@
-﻿namespace MyPaint
+﻿namespace MSPaint
 {
     partial class Form1
     {
@@ -179,9 +179,9 @@
             // btnOpen
             // 
             this.btnOpen.Caption = "Open";
-            this.btnOpen.Glyph = global::MyPaint.Properties.Resources.noFill;
+            this.btnOpen.Glyph = global::MSPaint.Properties.Resources.noFill;
             this.btnOpen.Id = 1;
-            this.btnOpen.LargeGlyph = global::MyPaint.Properties.Resources.open2_32x32;
+            this.btnOpen.LargeGlyph = global::MSPaint.Properties.Resources.open2_32x32;
             this.btnOpen.Name = "btnOpen";
             toolTipItem1.Text = "Ctrl + O";
             superToolTip1.Items.Add(toolTipItem1);
@@ -192,7 +192,7 @@
             // 
             this.btnSave.Caption = "Save";
             this.btnSave.Id = 2;
-            this.btnSave.LargeGlyph = global::MyPaint.Properties.Resources.saveall_32x32;
+            this.btnSave.LargeGlyph = global::MSPaint.Properties.Resources.saveall_32x32;
             this.btnSave.Name = "btnSave";
             toolTipItem2.Text = "Ctrl + S";
             superToolTip2.Items.Add(toolTipItem2);
@@ -203,7 +203,7 @@
             // 
             this.barSubItem1.Caption = "Size";
             this.barSubItem1.Id = 9;
-            this.barSubItem1.LargeGlyph = global::MyPaint.Properties.Resources.Editing_Line_Width_icon;
+            this.barSubItem1.LargeGlyph = global::MSPaint.Properties.Resources.Editing_Line_Width_icon;
             this.barSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.size1),
             new DevExpress.XtraBars.LinkPersistInfo(this.size2),
@@ -214,7 +214,7 @@
             // size1
             // 
             this.size1.Caption = "1 px";
-            this.size1.Glyph = global::MyPaint.Properties.Resources.size1;
+            this.size1.Glyph = global::MSPaint.Properties.Resources.size1;
             this.size1.Id = 10;
             this.size1.Name = "size1";
             this.size1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.size1_ItemClick);
@@ -222,7 +222,7 @@
             // size2
             // 
             this.size2.Caption = "3 px";
-            this.size2.Glyph = global::MyPaint.Properties.Resources.size2;
+            this.size2.Glyph = global::MSPaint.Properties.Resources.size2;
             this.size2.Id = 11;
             this.size2.Name = "size2";
             this.size2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.size2_ItemClick);
@@ -230,7 +230,7 @@
             // size3
             // 
             this.size3.Caption = "5 px";
-            this.size3.Glyph = global::MyPaint.Properties.Resources.size3;
+            this.size3.Glyph = global::MSPaint.Properties.Resources.size3;
             this.size3.Id = 12;
             this.size3.Name = "size3";
             this.size3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.size3_ItemClick);
@@ -238,7 +238,7 @@
             // size4
             // 
             this.size4.Caption = "7 px";
-            this.size4.Glyph = global::MyPaint.Properties.Resources.size4;
+            this.size4.Glyph = global::MSPaint.Properties.Resources.size4;
             this.size4.Id = 13;
             this.size4.Name = "size4";
             this.size4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.size4_ItemClick);
@@ -246,9 +246,9 @@
             // btnUndo
             // 
             this.btnUndo.Caption = "Undo";
-            this.btnUndo.Glyph = global::MyPaint.Properties.Resources.reset_16x16;
+            this.btnUndo.Glyph = global::MSPaint.Properties.Resources.reset_16x16;
             this.btnUndo.Id = 16;
-            this.btnUndo.LargeGlyph = global::MyPaint.Properties.Resources.reset_32x32;
+            this.btnUndo.LargeGlyph = global::MSPaint.Properties.Resources.reset_32x32;
             this.btnUndo.Name = "btnUndo";
             toolTipItem3.Text = "Ctrl + Z";
             superToolTip3.Items.Add(toolTipItem3);
@@ -265,33 +265,33 @@
             galleryItemGroup1.Caption = "groupShape";
             galleryItem1.Caption = "pencil";
             galleryItem1.Checked = true;
-            galleryItem1.Image = global::MyPaint.Properties.Resources.pencil_icon;
+            galleryItem1.Image = global::MSPaint.Properties.Resources.pencil_icon;
             galleryItem2.Caption = "line";
-            galleryItem2.Image = global::MyPaint.Properties.Resources.Line_icon;
+            galleryItem2.Image = global::MSPaint.Properties.Resources.Line_icon;
             galleryItem3.Caption = "bezier";
-            galleryItem3.Image = global::MyPaint.Properties.Resources.bezierShapeIcon;
+            galleryItem3.Image = global::MSPaint.Properties.Resources.bezierShapeIcon;
             galleryItem4.Caption = "polygon";
-            galleryItem4.Image = global::MyPaint.Properties.Resources.polygonShapeIcon;
+            galleryItem4.Image = global::MSPaint.Properties.Resources.polygonShapeIcon;
             galleryItem5.Caption = "rectangle";
-            galleryItem5.Image = global::MyPaint.Properties.Resources.rectangle_icon;
+            galleryItem5.Image = global::MSPaint.Properties.Resources.rectangle_icon;
             galleryItem6.Caption = "ellipse";
-            galleryItem6.Image = global::MyPaint.Properties.Resources.ellipse_icon;
+            galleryItem6.Image = global::MSPaint.Properties.Resources.ellipse_icon;
             galleryItem7.Caption = "triangle";
-            galleryItem7.Image = global::MyPaint.Properties.Resources.Triangle_icon;
+            galleryItem7.Image = global::MSPaint.Properties.Resources.Triangle_icon;
             galleryItem8.Caption = "diamond";
-            galleryItem8.Image = global::MyPaint.Properties.Resources.diamondIcon;
+            galleryItem8.Image = global::MSPaint.Properties.Resources.diamondIcon;
             galleryItem9.Caption = "pentagon";
-            galleryItem9.Image = global::MyPaint.Properties.Resources.pentagon_icon;
+            galleryItem9.Image = global::MSPaint.Properties.Resources.pentagon_icon;
             galleryItem10.Caption = "squareTriangle";
-            galleryItem10.Image = global::MyPaint.Properties.Resources.squareTriangleIcon;
+            galleryItem10.Image = global::MSPaint.Properties.Resources.squareTriangleIcon;
             galleryItem11.Caption = "downArrow";
-            galleryItem11.Image = global::MyPaint.Properties.Resources.down_icon;
+            galleryItem11.Image = global::MSPaint.Properties.Resources.down_icon;
             galleryItem12.Caption = "upArrow";
-            galleryItem12.Image = global::MyPaint.Properties.Resources.upArrowIcon;
+            galleryItem12.Image = global::MSPaint.Properties.Resources.upArrowIcon;
             galleryItem13.Caption = "rightArrow";
-            galleryItem13.Image = global::MyPaint.Properties.Resources.rightArrowIcon;
+            galleryItem13.Image = global::MSPaint.Properties.Resources.rightArrowIcon;
             galleryItem14.Caption = "leftArrow";
-            galleryItem14.Image = global::MyPaint.Properties.Resources.leftArrow;
+            galleryItem14.Image = global::MSPaint.Properties.Resources.leftArrow;
             galleryItemGroup1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             galleryItem1,
             galleryItem2,
@@ -318,7 +318,7 @@
             // 
             this.btnEraser.Caption = "Eraser";
             this.btnEraser.Id = 23;
-            this.btnEraser.LargeGlyph = global::MyPaint.Properties.Resources.draw_eraser_icon;
+            this.btnEraser.LargeGlyph = global::MSPaint.Properties.Resources.draw_eraser_icon;
             this.btnEraser.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnEraser3px),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnEraser5px),
@@ -330,7 +330,7 @@
             // 
             this.btnEraser3px.Caption = "3 px";
             this.btnEraser3px.CheckStyle = DevExpress.XtraBars.BarCheckStyles.Radio;
-            this.btnEraser3px.Glyph = global::MyPaint.Properties.Resources.eraserIcon;
+            this.btnEraser3px.Glyph = global::MSPaint.Properties.Resources.eraserIcon;
             this.btnEraser3px.Id = 24;
             this.btnEraser3px.Name = "btnEraser3px";
             this.btnEraser3px.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEraser3px_ItemClick);
@@ -339,7 +339,7 @@
             // 
             this.btnEraser5px.Caption = "5 px";
             this.btnEraser5px.CheckStyle = DevExpress.XtraBars.BarCheckStyles.Radio;
-            this.btnEraser5px.Glyph = global::MyPaint.Properties.Resources.eraserIcon;
+            this.btnEraser5px.Glyph = global::MSPaint.Properties.Resources.eraserIcon;
             this.btnEraser5px.Id = 25;
             this.btnEraser5px.Name = "btnEraser5px";
             this.btnEraser5px.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEraser5px_ItemClick);
@@ -348,7 +348,7 @@
             // 
             this.btnEraser10px.Caption = "10 px";
             this.btnEraser10px.CheckStyle = DevExpress.XtraBars.BarCheckStyles.Radio;
-            this.btnEraser10px.Glyph = global::MyPaint.Properties.Resources.eraserIcon;
+            this.btnEraser10px.Glyph = global::MSPaint.Properties.Resources.eraserIcon;
             this.btnEraser10px.Id = 26;
             this.btnEraser10px.Name = "btnEraser10px";
             this.btnEraser10px.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEraser10px_ItemClick);
@@ -356,7 +356,7 @@
             // btnEraser20px
             // 
             this.btnEraser20px.Caption = "20 px";
-            this.btnEraser20px.Glyph = global::MyPaint.Properties.Resources.eraserIcon;
+            this.btnEraser20px.Glyph = global::MSPaint.Properties.Resources.eraserIcon;
             this.btnEraser20px.Id = 27;
             this.btnEraser20px.Name = "btnEraser20px";
             this.btnEraser20px.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEraser20px_ItemClick);
@@ -387,7 +387,7 @@
             // 
             this.btnSelect.Caption = "Select";
             this.btnSelect.Id = 32;
-            this.btnSelect.LargeGlyph = global::MyPaint.Properties.Resources.selectIcon;
+            this.btnSelect.LargeGlyph = global::MSPaint.Properties.Resources.selectIcon;
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSelect_ItemClick);
             // 
@@ -396,7 +396,7 @@
             this.btnPaste.Caption = "Paste";
             this.btnPaste.Enabled = false;
             this.btnPaste.Id = 33;
-            this.btnPaste.LargeGlyph = global::MyPaint.Properties.Resources.paste_32x32;
+            this.btnPaste.LargeGlyph = global::MSPaint.Properties.Resources.paste_32x32;
             this.btnPaste.Name = "btnPaste";
             toolTipItem4.Text = "Ctrl + V";
             superToolTip5.Items.Add(toolTipItem4);
@@ -407,7 +407,7 @@
             // 
             this.btnCopy.Caption = "Copy";
             this.btnCopy.Enabled = false;
-            this.btnCopy.Glyph = global::MyPaint.Properties.Resources.copy_16x16;
+            this.btnCopy.Glyph = global::MSPaint.Properties.Resources.copy_16x16;
             this.btnCopy.Id = 34;
             this.btnCopy.Name = "btnCopy";
             toolTipItem5.Text = "Ctrl + C";
@@ -419,7 +419,7 @@
             // 
             this.btnCut.Caption = "Cut";
             this.btnCut.Enabled = false;
-            this.btnCut.Glyph = global::MyPaint.Properties.Resources.cut_16x16;
+            this.btnCut.Glyph = global::MSPaint.Properties.Resources.cut_16x16;
             this.btnCut.Id = 35;
             this.btnCut.Name = "btnCut";
             toolTipItem6.Text = "Ctrl + X";
@@ -431,7 +431,7 @@
             // 
             this.btnRedo.Caption = "Redo";
             this.btnRedo.Id = 37;
-            this.btnRedo.LargeGlyph = global::MyPaint.Properties.Resources.redoIcon;
+            this.btnRedo.LargeGlyph = global::MSPaint.Properties.Resources.redoIcon;
             this.btnRedo.Name = "btnRedo";
             toolTipItem7.Text = "Ctrl + Y";
             superToolTip8.Items.Add(toolTipItem7);
@@ -443,7 +443,7 @@
             this.btnFill.Caption = "Fill";
             this.btnFill.Enabled = false;
             this.btnFill.Id = 39;
-            this.btnFill.LargeGlyph = global::MyPaint.Properties.Resources.valuecolorizermap_32x32;
+            this.btnFill.LargeGlyph = global::MSPaint.Properties.Resources.valuecolorizermap_32x32;
             this.btnFill.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.noFill),
             new DevExpress.XtraBars.LinkPersistInfo(this.solidColor),
@@ -455,7 +455,7 @@
             // noFill
             // 
             this.noFill.Caption = "No Fill";
-            this.noFill.Glyph = global::MyPaint.Properties.Resources.noFill2;
+            this.noFill.Glyph = global::MSPaint.Properties.Resources.noFill2;
             this.noFill.Id = 40;
             this.noFill.Name = "noFill";
             this.noFill.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.noFill_ItemClick);
@@ -463,7 +463,7 @@
             // solidColor
             // 
             this.solidColor.Caption = "Solid Color";
-            this.solidColor.Glyph = global::MyPaint.Properties.Resources.solidBrushIcon1;
+            this.solidColor.Glyph = global::MSPaint.Properties.Resources.solidBrushIcon1;
             this.solidColor.Id = 41;
             this.solidColor.Name = "solidColor";
             this.solidColor.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.solidColor_ItemClick);
@@ -471,7 +471,7 @@
             // linearBrush
             // 
             this.linearBrush.Caption = "LinearGradientBrush";
-            this.linearBrush.Glyph = global::MyPaint.Properties.Resources.linearBrushIcon;
+            this.linearBrush.Glyph = global::MSPaint.Properties.Resources.linearBrushIcon;
             this.linearBrush.Id = 42;
             this.linearBrush.Name = "linearBrush";
             this.linearBrush.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.linearBrush_ItemClick);
@@ -479,7 +479,7 @@
             // textureBrush
             // 
             this.textureBrush.Caption = "TextureBrush";
-            this.textureBrush.Glyph = global::MyPaint.Properties.Resources.hatchBrushIcon1;
+            this.textureBrush.Glyph = global::MSPaint.Properties.Resources.hatchBrushIcon1;
             this.textureBrush.Id = 43;
             this.textureBrush.Name = "textureBrush";
             this.textureBrush.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.textureBrush_ItemClick);
@@ -487,7 +487,7 @@
             // hatchBrush
             // 
             this.hatchBrush.Caption = "HatchBrush";
-            this.hatchBrush.Glyph = global::MyPaint.Properties.Resources.hatchIcon;
+            this.hatchBrush.Glyph = global::MSPaint.Properties.Resources.hatchIcon;
             this.hatchBrush.Id = 44;
             this.hatchBrush.Name = "hatchBrush";
             this.hatchBrush.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.hatchBrush_ItemClick);
@@ -593,7 +593,7 @@
             // 
             // currentShape
             // 
-            this.currentShape.Image = global::MyPaint.Properties.Resources.pencil_icon;
+            this.currentShape.Image = global::MSPaint.Properties.Resources.pencil_icon;
             this.currentShape.Margin = new System.Windows.Forms.Padding(10, 3, 0, 2);
             this.currentShape.Name = "currentShape";
             this.currentShape.Size = new System.Drawing.Size(20, 20);
@@ -617,7 +617,7 @@
             // 
             // menuItemOpenFile
             // 
-            this.menuItemOpenFile.Image = global::MyPaint.Properties.Resources.open2_32x32;
+            this.menuItemOpenFile.Image = global::MSPaint.Properties.Resources.open2_32x32;
             this.menuItemOpenFile.Name = "menuItemOpenFile";
             this.menuItemOpenFile.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.menuItemOpenFile.Size = new System.Drawing.Size(198, 26);
@@ -626,7 +626,7 @@
             // 
             // menuItemSaveFile
             // 
-            this.menuItemSaveFile.Image = global::MyPaint.Properties.Resources.saveall_32x32;
+            this.menuItemSaveFile.Image = global::MSPaint.Properties.Resources.saveall_32x32;
             this.menuItemSaveFile.Name = "menuItemSaveFile";
             this.menuItemSaveFile.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.menuItemSaveFile.Size = new System.Drawing.Size(198, 26);
@@ -640,7 +640,7 @@
             // 
             // menuItemCopy
             // 
-            this.menuItemCopy.Image = global::MyPaint.Properties.Resources.copy_32x32;
+            this.menuItemCopy.Image = global::MSPaint.Properties.Resources.copy_32x32;
             this.menuItemCopy.Name = "menuItemCopy";
             this.menuItemCopy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.menuItemCopy.Size = new System.Drawing.Size(198, 26);
@@ -649,7 +649,7 @@
             // 
             // menuItemCut
             // 
-            this.menuItemCut.Image = global::MyPaint.Properties.Resources.cut_16x16;
+            this.menuItemCut.Image = global::MSPaint.Properties.Resources.cut_16x16;
             this.menuItemCut.Name = "menuItemCut";
             this.menuItemCut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.menuItemCut.Size = new System.Drawing.Size(198, 26);
@@ -658,7 +658,7 @@
             // 
             // menuItemPaste
             // 
-            this.menuItemPaste.Image = global::MyPaint.Properties.Resources.paste_32x32;
+            this.menuItemPaste.Image = global::MSPaint.Properties.Resources.paste_32x32;
             this.menuItemPaste.Name = "menuItemPaste";
             this.menuItemPaste.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.menuItemPaste.Size = new System.Drawing.Size(198, 26);
@@ -678,14 +678,14 @@
             this.menuSubItemLinearGradientBrush,
             this.menuSubItemTextureBrush,
             this.menuSubItemHatchBrush});
-            this.menuItemFill.Image = global::MyPaint.Properties.Resources.valuecolorizermap_32x32;
+            this.menuItemFill.Image = global::MSPaint.Properties.Resources.valuecolorizermap_32x32;
             this.menuItemFill.Name = "menuItemFill";
             this.menuItemFill.Size = new System.Drawing.Size(198, 26);
             this.menuItemFill.Text = "Fill";
             // 
             // menuSubItemUnFill
             // 
-            this.menuSubItemUnFill.Image = global::MyPaint.Properties.Resources.noFill;
+            this.menuSubItemUnFill.Image = global::MSPaint.Properties.Resources.noFill;
             this.menuSubItemUnFill.Name = "menuSubItemUnFill";
             this.menuSubItemUnFill.Size = new System.Drawing.Size(217, 26);
             this.menuSubItemUnFill.Text = "UnFill";
@@ -693,7 +693,7 @@
             // 
             // menuSubItemSolidBrush
             // 
-            this.menuSubItemSolidBrush.Image = global::MyPaint.Properties.Resources.solidBrushIcon1;
+            this.menuSubItemSolidBrush.Image = global::MSPaint.Properties.Resources.solidBrushIcon1;
             this.menuSubItemSolidBrush.Name = "menuSubItemSolidBrush";
             this.menuSubItemSolidBrush.Size = new System.Drawing.Size(217, 26);
             this.menuSubItemSolidBrush.Text = "SolidBrush";
@@ -701,7 +701,7 @@
             // 
             // menuSubItemLinearGradientBrush
             // 
-            this.menuSubItemLinearGradientBrush.Image = global::MyPaint.Properties.Resources.linearBrushIcon;
+            this.menuSubItemLinearGradientBrush.Image = global::MSPaint.Properties.Resources.linearBrushIcon;
             this.menuSubItemLinearGradientBrush.Name = "menuSubItemLinearGradientBrush";
             this.menuSubItemLinearGradientBrush.Size = new System.Drawing.Size(217, 26);
             this.menuSubItemLinearGradientBrush.Text = "LinearGradientBrush";
@@ -709,7 +709,7 @@
             // 
             // menuSubItemTextureBrush
             // 
-            this.menuSubItemTextureBrush.Image = global::MyPaint.Properties.Resources.hatchBrushIcon1;
+            this.menuSubItemTextureBrush.Image = global::MSPaint.Properties.Resources.hatchBrushIcon1;
             this.menuSubItemTextureBrush.Name = "menuSubItemTextureBrush";
             this.menuSubItemTextureBrush.Size = new System.Drawing.Size(217, 26);
             this.menuSubItemTextureBrush.Text = "TextureBrush";
@@ -717,7 +717,7 @@
             // 
             // menuSubItemHatchBrush
             // 
-            this.menuSubItemHatchBrush.Image = global::MyPaint.Properties.Resources.hatchIcon;
+            this.menuSubItemHatchBrush.Image = global::MSPaint.Properties.Resources.hatchIcon;
             this.menuSubItemHatchBrush.Name = "menuSubItemHatchBrush";
             this.menuSubItemHatchBrush.Size = new System.Drawing.Size(217, 26);
             this.menuSubItemHatchBrush.Text = "HatchBrush";
@@ -725,7 +725,7 @@
             // 
             // menuItemDelete
             // 
-            this.menuItemDelete.Image = global::MyPaint.Properties.Resources.delete_32x32;
+            this.menuItemDelete.Image = global::MSPaint.Properties.Resources.delete_32x32;
             this.menuItemDelete.Name = "menuItemDelete";
             this.menuItemDelete.ShortcutKeys = System.Windows.Forms.Keys.Delete;
             this.menuItemDelete.Size = new System.Drawing.Size(198, 26);

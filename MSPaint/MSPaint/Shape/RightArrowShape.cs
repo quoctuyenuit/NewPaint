@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyPaint.Shape
+namespace MSPaint.Shape
 {
     class RightArrowShape : DrawingFrame
     {

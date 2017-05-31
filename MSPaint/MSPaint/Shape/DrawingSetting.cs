@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyPaint.Shape
+namespace MSPaint.Shape
 {
     class DrawingSetting
     {
@@ -24,6 +24,15 @@ namespace MyPaint.Shape
                     (sinTheta * (pointToRotate.X - centerPoint.X) +
                     cosTheta * (pointToRotate.Y - centerPoint.Y) + centerPoint.Y)
             };
+        }
+
+        //Hàm vẽ các điểm xung quay để chỉnh sửa
+        static public void drawEditPoint(System.Drawing.Point p, System.Drawing.Graphics gr, int raius)
+        {
+            int left = p.X - raius;
+            int upper = p.Y - raius;
+            gr.FillRectangle(System.Drawing.Brushes.White, left, upper, 2 * raius, 2 * raius);
+            gr.DrawRectangle(System.Drawing.Pens.Black, left, upper, 2 * raius, 2 * raius);
         }
 
         public enum DrawingMode { HonLeft, HonRight, VerUp, VerDown, UpLeft, UpRight, DownLeft, DownRight, Move, Drawing, Normal };

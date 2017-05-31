@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyPaint.Shape
+namespace MSPaint.Shape
 {
     class SelectShape : DrawingFrame
     {
@@ -208,13 +208,13 @@ namespace MyPaint.Shape
                                 lowerBound = height + upper;
                                 rightBound = left + width;
 
-                                Bitmap bmp = this.drawingSpace.Content.Clone(new Rectangle(left, upper, width, height), this.drawingSpace.Content.PixelFormat);
+                                Bitmap bmp = this.drawingSpace.ContentPanel.Content.Clone(new Rectangle(left, upper, width, height), this.drawingSpace.ContentPanel.Content.PixelFormat);
 
                                 Bitmap temp = this.drawingSpace.Image.Clone(new Rectangle(0, 0, this.drawingSpace.Image.Width, this.drawingSpace.Image.Height), this.drawingSpace.Image.PixelFormat);
 
                                 this.drawingSpace.ListBack.Push(temp);
 
-                                using (Graphics gr = Graphics.FromImage(this.drawingSpace.Content))
+                                using (Graphics gr = Graphics.FromImage(this.drawingSpace.ContentPanel.Content))
                                 {
                                     gr.FillRectangle(Brushes.White, leftBound, upperBound, bmp.Size.Width, bmp.Size.Height);
                                 }

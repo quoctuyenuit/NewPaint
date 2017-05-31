@@ -1,4 +1,4 @@
-﻿using MyPaint.Tools;
+﻿using MSPaint.Tools;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyPaint.Shape
+namespace MSPaint.Shape
 {
     class Eraser : FreePen
     {
@@ -37,23 +37,8 @@ namespace MyPaint.Shape
 
                     gr.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
-                    if (doneStatus)
-                    {
-                        List<Point> tempList = new List<Point>();
-                        for (int i = 0; i < listPrePoint.Count; i++)
-                            if (i % 2 == 0)
-                                tempList.Add(listPrePoint[i]);
-
-                        if (tempList.Count <= 1)
-                            tempList.Add(new Point() { X = listPrePoint.First().X + 1, Y = listPrePoint.First().Y });
-
-                        gr.DrawCurve(pen, tempList.ToArray(), 0.5f);
-                    }
-                    else
-                    {
-                        if (listPrePoint.Count > 1)
-                            gr.DrawLines(pen, listPrePoint.ToArray());
-                    }
+                    if (listPrePoint.Count > 1)
+                        gr.DrawLines(pen, listPrePoint.ToArray());
                 }
             }
 
